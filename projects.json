@@ -1,0 +1,193 @@
+{
+    "0": {
+        "projTitle": "Hablo Gato",
+        "projSection": ["Overview", "Procedural NPC Generator", "2.5D Art Style Development"],
+        "projOverview": [
+            ["Course", "Oregon State University's CS457: Online Capstone (2.5 months)"],
+            ["Tools", "Procreate iOS, Adobe Photoshop, Autodesk Maya, Unity3D, Kenney 3D assets"],
+            ["Languages", "C#"],
+            ["Desc.", "Hablo Gato is a prototype VR game that provides a language-immersion experience through speech recognition. The idea behind this was to explore what more affordable and accessible options for immersive language learning could look like."]
+        ],
+        "projContent": {
+            "Procedural NPC Generator": {
+                "desc": "I wrote a procedural NPC generator in C# to ensure that my team did not need to set up individual and animate background characters. This saved us time when it came to populating a busy and lively world.",
+                "img": {
+                    "0": ["0", "Testing populating the environment on run time (excludes sprite randomization)"]
+                }
+            },
+            "2.5D Art Style Development": {
+                "desc": "I handled the entire development of our 2.5D Paper Mario-inspired art style, where the characters are 2D and the environment is 3D. I opted for this to avoid both high vertex count (200k+) and lighting (for most scenes) on the Quest 2’s mobile processor. Because this was a computer science course, I made these choices to give our team more time to focus on programming-related tasks.",
+                "img": {
+                    "0": ["1", "Preliminary test of plane-based characters in a 3D VR environment"],
+                    "1": ["2", "Animated character sprite in-game & demonstration of keeping forward vectors facing the player"]
+                }
+            }
+        }
+    },
+    "1" :{
+        "projTitle": "Starmetry",
+        "projSection": ["Overview", "Point & Click Controls in 2.5D", "Reference System", "Math Problem Generator", "Pixel Art Shader"],
+        "projOverview": [
+            ["Course", "Oregon State University's CS4xx: Special Projects (2.5 months)"],
+            ["Roles", "Solo project - all development and art was made by me"],
+            ["Tools", "Blender, Procreate iOS, Pribambase, Adobe Photoshop, Unity3D"],
+            ["Languages", "C#, Yarn"],
+            ["Desc.", "Starmetry is my attempt to prototype an educational math game level and explore the idea of games as an educational tool. I was especially interested in creating a game accessible to adults."]
+        ],
+        "projContent": {
+            "Point & Click Controls in 2.5D": {
+                "desc": "I designed the movement controls in this game to be accessible for not only all ages, but also to make the game compatible with both desktop and mobile devices. The controls are produced using raycasts and layer masks to determine, when clicked, walkable areas and interactable NPCs. On click, a destination marker is set at the hit point made by the casted ray, causing the player character to move in 3D space to a specific spot using Unity’s ScreenToWorld() method.",
+                "img": {
+                    "0": ["0", "A visual marker displays to show where the destination point was set"]
+                }
+            },
+            "Reference System": {
+                "desc": "I wrote a procedural NPC generator in C# to ensure that my team did not need to set up individual and animate background characters. This saved us time when it came to populating a busy and lively world.",
+                "img": {
+                    "0": ["1", "Reference features can be accessed while actively playing the game"]
+                }
+            },
+            "Math Problem Generator": {
+                "desc": "To create replayability, I established a system that selects random integers and calculates not only the correct answer, but plausible answers within range to make the answer a little less obvious. These values are then sent as variables into Yarn's DialogueRunner class, determining what branching narrative will be displayed depending on what answer the player gives. I formatted this system to not only work with problems in the main story, but also repeatable side quests that would reward the player with items, currency, etc. in future iterations of the game.",
+                "img": {
+                    "0": ["2", "The NPC changes the information he gives every playthrough"],
+                    "1": ["3", "Not only do the correct answers change per playthrough, but so do multiple choice options"]
+                }
+            },
+            "Pixel Art Shader": {
+                "desc": "To save time on hand animating pixel art sprites and textures, I opted to create a base pixel art shader. This base was used to animate the river, color the star (ball object) and produce pixelated particle effects for the star.",
+                "subdesc": {
+                    "0": {
+                        "title": "Base Pixel Art Shader",
+                        "desc": "The base shader was used for both the main material and particle effects, saving me time on creating different textures.",
+                        "img": {
+                            "0": ["4", "Base shader as a material on a 3D sphere & a texture on plane-based particles"],
+                            "1": ["5", "The pixel look is achieved by flattening the UV node using Multiply, Floor, and Divide nodes; it's then divided further with Tile and Offset"]
+                        }
+                    },
+                    "1": {
+                        "title": "Animated Pixel Art Shader",
+                        "desc": "The base shader was recycled into a second material that randomizes the texture, allowing me to quickly add animations on props and the environment.",
+                        "img": {
+                            "0": ["6", "This creates shimmering water when stretched by a primitive"],
+                            "1": ["7", "The addition of Voronoi and Remap nodes helped me create the stylistic illusion of water through randomization"]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "2" :{
+        "projTitle": "Catiator",
+        "projSection": ["Overview", "Design & 3D Modeling", "Rigging & Animation", "Hackathon Pitch Video"],
+        "projOverview": [
+            ["Hackathon", "Stanford University's TreeHacks (2021) (36 hours)"],
+            ["Awards", "TreeHacks Moonshot Prize, Pinnacle Qualification"],
+            ["Tools", "Autodesk Maya, Adobe Photoshop, Unity3D"],
+            ["Desc.", "Catiator is a VR game aimed at teaching American Sign Language through gamification. Using the Oculus Quest 2's gesture recognition feature, players practice one-handed signs to defeat charging gladiator cats in a vaporwave colosseum."]
+        ],
+        "projContent": {
+            "Design & 3D Modeling": {
+                "desc": "Together as a team, we decided on creating custom assets to help our project stand out from others. I produced this character, the Catiator, from scratch. My focus was to create a cute, eye-catching character while utilizing block modeling to create the character faster. I also opted for a low poly look to help not only myself model the Catiator, but also to help keep the environment assets simple in polycount for our VR environment.",
+                "img": {
+                    "0": ["0", "Chubby cats make for both fun easier characters to model, especially with this turnaround I made"]
+                }
+            },
+            "Rigging & Animation": {
+                "desc": "I was able to pick up animation and rigging for my team to accomodate missing skills. The rig covered the needs of my team without needing to find an auto-rigger to match the geometry I had made.",
+                "subdesc": {
+                    "0": {
+                        "title": "Rigging",
+                        "desc": "After modeling our custom enemy character, I did a quick IK quadruped rig with a heatmap weight distribution, manually editing as needed.",
+                        "img": {
+                            "0": ["1", "Basic IK quadruped rig with clusters on an IK chain for the spine"],
+                            "1": ["2", "Controller setup with nurbcurves"]
+                        }
+                    },
+                    "1": {
+                        "title": "Animation",
+                        "desc": "I was also in charge of animating the Catiator. After exporting these FBX files, I crated animation states in Unity that played based on the player's actions.",
+                        "img": {
+                            "0": ["3", "Basic walking/waddling"],
+                            "1": ["4", "Attacking player by purring - this plays once player takes damage"],
+                            "2": ["5", "Hit animation when player signs the correct letter"]
+                        }
+                    }
+                }
+            },
+            "Hackathon Pitch Video": {
+                "desc": "This video was a part of our presentation to hackathon judges. In it, you can see the Catiator enemy character in action.",
+                "video": {
+                    "0": ["_OPf_EpcgpE", "youtube", ""]
+                }
+            }
+        }
+    },
+    "3": {
+        "projTitle": "Guiding Light",
+        "projSection": ["Overview", "Dialogue System", "Navigation Accessibility Features", "Git Management", "Pixel Art Illustrations"],
+        "projOverview": [
+            ["Original Game Jam", "Themed Horror Game Jam (October 2023) w/ Distance Over Time Studio"],
+            ["Patched Release", "The Rookies (Feb. - May 2024)"],
+            ["Tools", "Unreal Engine 5 Blueprints, Git (GitHub), Pixquare"],
+            ["Desc.", "Guiding Light is a visual novel adventure game with a focus on blind accessibility. I worked on this with Distance Over Time Studio, a team of career switchers collaborating together to collectively improve our skills for the games industry."]
+        ],
+        "projContent": {
+            "Dialogue System": {
+                "desc": "I created this game's dialogue system using Unreal Engine 5's Blueprints. I opted to create a new system over using a pre-made one to make sure I understood it well and could implement any accessibility feature request made by our blind teammate, including voice over.",
+                "video": {
+                    "0": ["1029840902", "vimeo", "Please turn sound on when viewing this demo reel — Guiding Light uses audio cues for low-vision accessibility"]
+                }
+            },
+            "Navigation Accessibility Features": {
+                "desc": "I worked on making navigation in this top-down game accessible to low-vision and blind players. My contributions included refactoring and redesigning accessibility features from the original game jam version in addition to creating new audio-forward ones based on play tests.",
+                "video": {
+                    "0": ["1029828097", "vimeo", "Please turn sound on when viewing this demo reel — Guiding Light uses audio cues for low-vision accessibility"]
+                }
+            },
+            "Git Management": {
+                "desc": "Since we were a team of 8 people, I found it essential to establish a version control system (VCS) for our group using git. Some of our members have limited experience with git; I have taken the role of managing our repository and educating others on how to branch, make pull requests, and push & pull using GitHub, our VCS of choice. I also setup Git LFS to help us handle large asset packs in Unreal Engine 5. Because most of us utilize Discord, all GitHub-related communications take place on our server rather than issues on GitHub.",
+                "img": {
+                    "0": ["0", "An introductory post I made concerning keeping the main branch safe with links to official documentation for further reference"],
+                    "1": ["1", "A clarity post concerning updating from \"main\" and how to do so in GitHub Desktop"],
+                    "2": ["2", "The GitHub webhook we have in our Discord server showing the pull requests I've approved after review -- I then ping for applicable members to update so we do not cause merge conflicts"]
+                }
+            },
+            "Pixel Art Illustrations": {
+                "desc": "Our primary 2D artist, Monkey KG, was not available during our dedicated polishing phase. He allowed me to recreate his work as pixel art in order to align all illustrations with the pixel art our environment's pixel art shader. These images were hand-drawn, no AI was utilized.",
+                "img": {
+                    "0": ["5", "I painted over the original illustration to create this menu background image; dithering was used to push the pixel art aesthetic.", "6"],
+                    "1": ["4", "The character portraits I recreated based on the original drawings and/or narrative descriptions.", "7"],
+                    "2": ["3", "One of my pixel art paint overs on our original artist's sketches for the jam. Illustrations like these appear during notable parts of the story.", "8"]
+                }
+            }
+        }
+    },
+    "4": {
+        "projTitle": "Microsoft Holograms",
+        "projSection": ["Overview", "Demo Reel"],
+        "projOverview": [
+            ["Contract Duration", "August 2017 - February 2019"],
+            ["Tools", "Proprietary systems, Autodesk Maya, Adobe Photoshop, Unity3D"],
+            ["Languages", "C#"],
+            ["Desc.", "At Microsoft's Mixed Reality Capture Studios, I was a contract Processing Technician and 3D Generalist on holograms (moving photogrammetry) for internal and external clients."]
+        ],
+        "extraOverview": [
+            "I performed the following:",
+            [
+                "Generated point clouds, UV maps, and textures from RGB and infrared photos using proprietary systems",
+                "Detailed and adjusted meshes using scripts and/or hand-fixes on subdivided meshes",
+                "Enhanced textures via feedback from our in-house art director using automated Photoshop actions",
+                "Tested mesh quality using lighting tests"
+            ]
+        ],
+        "projContent": {
+            "Demo Reel": {
+                "desc": "Please Note: I can only show published footage in this reel due to Microsoft's policy. Any wireframes, in-progress shots, etc. displayed have been shown publicly by Microsoft and/or their clients.",
+                "video": {
+                    "0": ["800004234", "vimeo", "Clients include Alibaba, Gatorade, Variety, and the Smithsonian Institution"]
+                }
+            }
+        }
+    }
+}
