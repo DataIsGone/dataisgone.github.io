@@ -9,7 +9,6 @@ While I'm not a web developer nor a designer, I still wanted to learn something 
 - GoogleFonts
 - Pixsquare (pixel art)
 
-<hr>
 
 ## Design
 ### Code Structure
@@ -22,11 +21,9 @@ My portfolio's color and accent themes come from the pixel art found on my splas
 
 The web design is very heavily inspired by [Olenda Shmahalo's portolfio](https://www.olenashmahalo.com/). I stumbled across their portfolio in an art community and admired its functionality and clean organization. I wanted to replicate the features I loved the most, especially the sorting options; I tried to do so while making sure it could work well for not just images, but lots of text as well.
 
-<hr>
 
 ## Future Features / To Do
 - Convert all self-hosted image content into `.webp`
 
-<hr>
 
 ## Credits
