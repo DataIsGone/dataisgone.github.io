@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "name": "Hablo Gato",
+        "desc": "VR game prototype for language-immersion through speech recognition",
+        "role": "<b>Roles</b>: NPC creation (generator, Unity NavMesh path-finding), 2.5D art style in VR",
+        "tags": ["Tools", "Programming", "2D"]
+    },
+    {
+        "id": 1,
+        "name": "Starmetry",
+        "desc": "Prototype level for math-focused narrative game",
+        "role": "<b>Roles</b>: Solo project - all art and development was made by me",
+        "tags": ["Programming", "2D", "Shaders"]
+    },
+    {
+        "id": 2,
+        "name": "Catiator",
+        "desc": "VR game prototype for learning American Sign Language through gesture recognition",
+        "role": "<b>Roles</b>: 3D generalist - character design, modeling, rigging, & animation",
+        "tags": ["3D"]
+    },
+    {
+        "id": 3,
+        "name": "Guiding Light",
+        "desc": "Visual novel & adventure game focused on vision accessibility",
+        "role": "<b>Roles</b>: Accessibility features development, gameplay programming, refactoring, git management, 2D art",
+        "tags": ["Programming", "Tools", "Optimization"]
+    },
+    {
+        "id": 4,
+        "name": "Microsoft Holograms",
+        "desc": "Videogrammetric content made for clients during contract spanning 2017 - 2019",
+        "role": "<b>Roles</b>: Processed point cloud data into textured meshes, post-processing textures, proprietary software QA",
+        "tags": ["Optimization", "3D"]
+    }
+]

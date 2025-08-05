@@ -1,0 +1,31 @@
+{
+    "bio": "<p>Ryan Davis is an aspiring technical artist and digital artist. She earned her bachelor's degrees in Art Practice from UC Berkeley (2015) and in Computer Science from Oregon State University (2022).</p><p>She has held different positions in the animation and mixed reality industries; previous companies have included Industrial Light & Magic, Pixar Animation Studios, Microsoft, and Intel with projects revolving around 3D graphics, augmented reality tools, photogrammetry, and art education.</p><p>Ryan is currently located in San Diego, CA and enjoys painting, gardening, 3D printing, MMO gaming, and being a giant Pokemon nerd. She's probably trying to complete a quest in Pokemon Go as you're reading this.</p>",
+    "accomplishments": [
+        "IGDA Foundation <a href=\"https://web.archive.org/web/20231024035802/https://www.igdafoundation.org/virtualexchange\">Virtual Exchange 2023</a> Grantee (Velocity)",
+        "ACM SIGGRAPH <a href=\"https://www.siggraph.org/member-profile/ryan-davis\">Spotlight</a> (2017)",
+        "UC Berkeley Art Practice <a href=\"https://art.berkeley.edu/alumni\">Alumni Gallery</a> (Ongoing)"
+    ],
+    "now": [ 
+        "Applying to junior- & associate-level tech art positions",
+        "Competing in game jams as a part of <a href=\"https://github.com/Distance-Over-Time\">Distance Over Time Studios</a>",
+        "Making pixel art for charity zines and projects"
+    ],
+    "aff": {
+        "IGDA Foundation": {
+            "icon": "fa-solid fa-gamepad",
+            "url": "https://www.igdafoundation.org/"
+        },
+        "Code Coven": {
+            "icon": "fa-solid fa-wand-sparkles",
+            "url": "https://www.codecoven.co/"
+        },
+        "Brown Girl Gamer Code": {
+            "icon": "fa-solid fa-dragon",
+            "url": "https://www.browngirlgamercode.com/"
+        },
+        "Black Girl Gamers": {
+            "icon": "fa-solid fa-chess-queen",
+            "url": "https://www.theblackgirlgamers.com/"
+        }
+    }
+}
