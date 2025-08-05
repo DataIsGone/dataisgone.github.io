@@ -49,7 +49,7 @@
   </div>
 
   <!-- PROJECTS -->
-  <div class="container center">
+  <div class="container-fluid center">
       <div class="row">
           <Card v-for="(item, index) in filteredItems"
             :key="index"

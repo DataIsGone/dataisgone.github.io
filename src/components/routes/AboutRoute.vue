@@ -20,80 +20,80 @@ onMounted(async () => {
 <template>
   <Title></Title>
 <!-- Container for the entire grid -->
-<div class="container">
+  <div class="container-fluid">
 
 <!-- Left Area: CONTACT, LINKS -->
-  <div class="row mb-5">
-    <br>
-    <hr>
-    <div class="col-lg-4">
-      <h6 class="style-pixel-bold">Contact Me</h6>
-      <div class="container w-auto mx-auto">
-        <Button label="ryan.alex.davis at gmail" href="mailto:ryan.alex.davis@gmail.com"/>
-      </div>
-        <br><br>
-        <h6 class="style-pixel-bold">Social Media</h6>
-          <div class="container">
-            <table>
-              <tr class="icon" v-for="(socialMedia, index) in socialMedia" :key="index">
-                <td>
-                  <IconLink
-                  :link="socialMedia.url"
-                  :iconClass="socialMedia.icon">
-                  </IconLink>
-                </td>
-                <td class="link-style">
-                  <a :href=socialMedia.url>{{ index }}</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-        <br><br>
-        <!-- AFFILIATIONS -->
-        <h6 class="style-pixel-bold">Affiliations</h6>
-          <div class="container">
+    <div class="row mb-5">
+      <br>
+      <hr>
+      <div class="col-lg-4">
+        <h6 class="style-pixel-bold">Contact Me</h6>
+        <div class="container w-auto mx-auto">
+          <Button label="ryan.alex.davis at gmail" href="mailto:ryan.alex.davis@gmail.com"/>
+        </div>
+          <br><br>
+          <h6 class="style-pixel-bold">Social Media</h6>
+            <div class="container">
               <table>
-                <tr class="icon" v-for="(aff, index) in about.aff" :key="index">
+                <tr class="icon" v-for="(socialMedia, index) in socialMedia" :key="index">
                   <td>
                     <IconLink
-                    :link="aff.url"
-                    :iconClass="aff.icon">
+                    :link="socialMedia.url"
+                    :iconClass="socialMedia.icon">
                     </IconLink>
                   </td>
                   <td class="link-style">
-                    <a :href=aff.url>{{ index }}</a>
+                    <a :href=socialMedia.url>{{ index }}</a>
                   </td>
                 </tr>
               </table>
-          </div>
+            </div>
           <br><br>
-        <!-- WEBSITE CREDITS -->
-        <h6 class="style-pixel-bold">Website</h6>
-          <div class="container">
-            <span class="">This website was heavily inspired by <a href="https://www.olenashmahalo.com/">Olena Shmahalo's portfolio website</a>. I ended up teaching myself a lot about Vue 3, Bootstrap 4, and HTML/CSS/JS attempting to mimic a lot of the layout properties I liked.</span>
-          </div>
-          <br><br>
+          <!-- AFFILIATIONS -->
+          <h6 class="style-pixel-bold">Affiliations</h6>
+            <div class="container">
+                <table>
+                  <tr class="icon" v-for="(aff, index) in about.aff" :key="index">
+                    <td>
+                      <IconLink
+                      :link="aff.url"
+                      :iconClass="aff.icon">
+                      </IconLink>
+                    </td>
+                    <td class="link-style">
+                      <a :href=aff.url>{{ index }}</a>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+            <br><br>
+          <!-- WEBSITE CREDITS -->
+          <h6 class="style-pixel-bold">Website</h6>
+            <div class="container">
+              <span class="">This website was heavily inspired by <a href="https://www.olenashmahalo.com/">Olena Shmahalo's portfolio website</a>. I ended up teaching myself a lot about Vue 3, Bootstrap 4, and HTML/CSS/JS attempting to mimic a lot of the layout properties I liked.</span>
+            </div>
+            <br><br>
+        </div>
+        <div class="col-lg-7">
+          <!-- BIO -->
+          <h6 class="style-pixel-bold">Bio</h6>
+          <span class="section-text" v-html="about.bio"></span>
+          <hr>
+          <!-- RECOGNITION -->
+          <h6 class="style-pixel-bold">Recognition</h6>
+          <span v-for="(accomplishment, index) in about.accomplishments" :key="index">
+            <span class="section-text link-style" v-html="accomplishment"></span>
+            <br v-if="index < about.accomplishments.length - 1" />
+          </span>
+          <hr>
+          <!-- NOW -->
+          <h6 class="style-pixel-bold">Now</h6>
+          <span v-for="(curr, index) in about.now" :key="index">
+            <span class="section-text" v-html="curr"></span>
+            <br v-if="index < about.accomplishments.length - 1" />
+          </span>
+        </div>
       </div>
-      <div class="col-lg-7">
-        <!-- BIO -->
-        <h6 class="style-pixel-bold">Bio</h6>
-        <span class="section-text" v-html="about.bio"></span>
-        <hr>
-        <!-- RECOGNITION -->
-        <h6 class="style-pixel-bold">Recognition</h6>
-        <span v-for="(accomplishment, index) in about.accomplishments" :key="index">
-          <span class="section-text link-style" v-html="accomplishment"></span>
-          <br v-if="index < about.accomplishments.length - 1" />
-        </span>
-        <hr>
-        <!-- NOW -->
-        <h6 class="style-pixel-bold">Now</h6>
-        <span v-for="(curr, index) in about.now" :key="index">
-          <span class="section-text" v-html="curr"></span>
-          <br v-if="index < about.accomplishments.length - 1" />
-        </span>
-      </div>
-    </div>
   </div>
 </template>
 
