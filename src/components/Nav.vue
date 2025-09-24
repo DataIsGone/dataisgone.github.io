@@ -9,11 +9,11 @@
                 <li class="nav-item navlink-spacer">
                     <router-link class="nav-link style-pixel" to="/">Projects</router-link>
                 </li>
-                <li class="nav-item navlink-spacer">
+                <!-- <li class="nav-item navlink-spacer">
                     <router-link class="nav-link style-pixel" to="/resume">Resume</router-link>
-                </li>
+                </li> -->
                 <li class="nav-item navlink-spacer">
-                    <router-link class="nav-link style-pixel" to="/about">About</router-link>
+                    <router-link class="nav-link style-pixel" to="/about">About/Contact</router-link>
                 </li>
             </ul>
         </div>

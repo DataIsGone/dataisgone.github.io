@@ -32,6 +32,13 @@ onMounted(async () => {
           <Button label="ryan.alex.davis at gmail" href="mailto:ryan.alex.davis@gmail.com"/>
         </div>
           <br><br>
+          <!-- RESUME DOWNLOAD -->
+          <h6 class="style-pixel-bold">Resume</h6>
+            <div class="container w-auto mx-auto">
+              <Button label="download resume" href="https://drive.google.com/file/d/1FpvZQNO_4ujZOTvsja4PthBtMxfEOp6e/view?usp=sharing"/>
+            </div>
+          <br><br>
+          <!-- SOCIAL MEDIA -->
           <h6 class="style-pixel-bold">Social Media</h6>
             <div class="container">
               <table>
